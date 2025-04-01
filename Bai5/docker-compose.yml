@@ -1,0 +1,8 @@
+version: '3'
+services:
+  redis:
+    image: redis:latest  # Sử dụng image Redis mới nhất
+    ports:
+      - "6379:6379"  # Mở cổng 6379
+    container_name: redis-container  # Đặt tên cho container
+    restart: always  # Tự động khởi động lại container nếu có lỗi
